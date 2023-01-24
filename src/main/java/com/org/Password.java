@@ -57,7 +57,36 @@ public int charType(char C){
             }
         }
 
+        if (usedUpper) {
+            ++score;
+        }
+
+        if (usedLower) {
+            ++score;
+        }
+
+        if (usedNum) {
+            ++score;
+        }
+
+        if (usedSym) {
+            ++score;
+        }
+
+        if (value.length() >= 8) {
+            ++score;
+        }
+
+        if (value.length() >= 16) {
+            ++score;
+        }
+
         return 0;
+    }
+
+    public String calculateScore(){
+
+        return null;
     }
 
 }
