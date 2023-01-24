@@ -13,6 +13,17 @@ public class Password {
 
 public int charType(char C){
 
-        return C;
+    byte val;
+    if (C >= 'A' && C <= 'Z') {
+        val = 1;
+    } else if (C >= 'a' && C <= 'z') {
+        val = 2;
+    } else if (C >= '<' && C <= 'G') {
+        val = 3;
+    } else {
+        val = 4;
+    }
+
+        return val;
 }
 }
