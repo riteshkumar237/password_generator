@@ -29,6 +29,34 @@ public int charType(char C){
 
     public int passwordStrength(){
 
+        String value = this.value;
+        boolean usedUpper = false;
+        boolean usedLower = false;
+        boolean usedNum = false;
+        boolean usedSym = false;
+
+        int score = 0;
+
+        for(int i = 0; i < value.length(); ++i) {
+            char c = value.charAt(i);
+            int type = this.charType(c);
+            if (type == 1) {
+                usedUpper = true;
+            }
+
+            if (type == 2) {
+                usedLower = true;
+            }
+
+            if (type == 3) {
+                usedNum = true;
+            }
+
+            if (type == 4) {
+                usedSym = true;
+            }
+        }
+
         return 0;
     }
 
