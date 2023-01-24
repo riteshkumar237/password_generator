@@ -97,4 +97,11 @@ public int charType(char C){
 
     }
 
+    @Override
+    public String toString() {
+        return "Password{" +
+                "value='" + value + '\'' +
+                ", length=" + length +
+                '}';
+    }
 }
