@@ -25,5 +25,11 @@ public int charType(char C){
     }
 
         return val;
-}
+    }
+
+    public int passwordStrength(){
+
+        return 0;
+    }
+
 }
