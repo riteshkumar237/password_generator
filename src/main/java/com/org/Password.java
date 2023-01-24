@@ -86,7 +86,15 @@ public int charType(char C){
 
     public String calculateScore(){
 
-        return null;
+        int Score = this.passwordStrength();
+        if (Score == 6) {
+            return "This is a very good password :D check the Useful Information section to make sure it satisfies the guidelines";
+        } else if (Score >= 4) {
+            return "This is a good password :) but you can still do better";
+        } else {
+            return Score >= 3 ? "This is a medium password :/ try making it better" : "This is a weak password :( definitely find a new one";
+        }
+
     }
 
 }
