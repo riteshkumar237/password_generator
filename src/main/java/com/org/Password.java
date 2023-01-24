@@ -9,4 +9,10 @@ public class Password {
         this.value = value;
         this.length =value.length();
     }
+
+
+public int charType(char C){
+
+        return C;
+}
 }
