@@ -24,4 +24,10 @@ public class Alphabet {
 
         if (specialCharactersIncluded) pool.append(SYMBOLS);
     }
+
+    public String getAlphabet(){
+
+        return pool.toString();
+    }
+
 }
